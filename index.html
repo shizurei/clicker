@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="autoClick();">
+    
+    <button id="clickBtn" onclick="clickFunc()">Click</button>
+    <h2 id="clickCount">Cash: 0</h2>
+    <h3 id="clickAmt">Click Amount: 1</h3>
+    <h3 id="cpsCount">CPS: 0</h3>
+
+    <div>
+        <h3>Click Upgrades</h3>
+
+        <ul>
+            <li><button onclick="clickUpgrade(0.1, 10)">+0.1 CLICK, -10 CASH</button>
+            </li>
+            <li><button onclick="clickUpgrade(0.25, 50)">+0.25 CLICKS, -50 CASH</button>
+            </li>
+            <li><button onclick="clickUpgrade(0.75, 200)">+0.75 CLICKS, -200 CASH</button>
+            </li>
+            <li><button onclick="clickUpgrade(1.25, 1000)">+1.25 CLICKS, -1000 CASH</button>
+            </li>
+            <li><button onclick="clickUpgrade(2.5, 4200)">+2.5 CLICKS, -4200 CASH</button>
+            </li>
+            <li><button onclick="clickUpgrade(4.75, 13370)">+4.75 CLICKS, -13,370 CASH</button>
+            </li>
+            <li><button onclick="autoClickUpgrade(1, 10)">+1 CPS, -10 CASH</button>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
